@@ -1,9 +1,10 @@
 <?php
+//database informations
 
-$host = "89.163.242.115";
-$user = "etutsold_mobil";
-$pass = "dbmobil1453";
-$db = "etutsold_mobil";
+$host = "";
+$user = "";
+$pass = "";
+$db = "";
 
 
 try {
@@ -101,9 +102,9 @@ try {
         $mail->IsHTML(true);
         $mail->SetLanguage("tr", "phpmailer/language");
         $mail->CharSet = "utf-8";
-        $mail->Username = "podcast@etutsoldaniki.com"; // Hosting hesabinizda actiginiz mail adresi
-        $mail->Password = "podcast1234podcast"; // mail adresi sifresi
-        $mail->SetFrom("podcast@etutsoldaniki.com", "IEEE-IUC PODCAST"); // Mail attigimizda yazacak isim
+        $mail->Username = ""; // Hosting hesabinizda actiginiz mail adresi
+        $mail->Password = ""; // mail adresi sifresi
+        $mail->SetFrom("", ""); // Mail attigimizda yazacak isim
         $mail->AddAddress($email); // Maili gonderecegimiz kisi/ alici
         $mail->Subject = "Forgot Password"; // Konu basligi
         $mail->Body = "Podcast Şifreniz :" . $result["User_password"]; // Mailin icerigi
