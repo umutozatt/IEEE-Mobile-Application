@@ -97,7 +97,7 @@ try {
         $mail->SMTPDebug = 1; // debug mod: 1  olması faydali, hata varsa gosterir.
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'tls';
-        $mail->Host = "mail.etutsoldaniki.com"; // Hosting hesabinizda ki domaininiz, mail.siteadresiniz.com gibi kullanin.
+        $mail->Host = ""; // Hosting hesabinizda ki domaininiz, mail.siteadresiniz.com gibi kullanin.
         $mail->Port = 587;
         $mail->IsHTML(true);
         $mail->SetLanguage("tr", "phpmailer/language");
